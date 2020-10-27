@@ -13,7 +13,6 @@
 
     <div class="container">
         <div class="calculadora mt-5">
-            <!-- <div class="col-12 pantalla mb-5 d-flex justify-content-end"><span id="pantalla" class="my-auto text-white"></span></div> -->
             <div class="col-12 pantalla mb-5">
                 <div id="pantalla" class="w-100 d-flex flex-wrap">
                     <span id="numero" class="w-100 my-auto text-white text-right"></span>
@@ -24,8 +23,8 @@
                 <button class="button my-2 mx-1" name="valor" value="7">7</button>
                 <button class="button my-2 mx-1" name="valor" value="8">8</button>
                 <button class="button my-2 mx-1" name="valor" value="9">9</button>
-                <button class="button my-2 mx-1" onclick="apagar()" value="of">of</button>
-                <button class="button my-2 mx-1" onclick="encender()" value="on">on</button>
+                <button class="button my-2 mx-1" name="apagar" value="off">off</button>
+                <button class="button my-2 mx-1" name="encender" value="on">on</button>
 
                 <button class="button my-2 mx-1" name="valor" value="4">4</button>
                 <button class="button my-2 mx-1" name="valor" value="5">5</button>
@@ -42,8 +41,8 @@
                     <button class="button my-2 mx-1" name="operacion" value="x">x</button>
     
                     <button class="button my-2 mx-1 cero" name="valor" value="0">0</button>
-                    <button class="button my-2 mx-1" onclick="limpiar()" value="ac">AC</button>
-                    <button class="button my-2 mx-1" onclick="resultado_operacion(operacion)" value="=">=</button>
+                    <button class="button my-2 mx-1" name="limpiar" value="ac">AC</button>
+                    <button class="button my-2 mx-1" name="resultado_operacion" value="=">=</button>
                 </div>
                 <div class="col-3 d-flex flex-wrap pl-0">
                     <button class="button my-2 mx-1" name="operacion" value="+">+</button>

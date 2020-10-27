@@ -7,7 +7,7 @@ var resultado = 0;
     
 $("button[name='valor']" ).on('click', function () {
     if(encendida == true && operacion == ""){
-        if(num1 == 0){
+        if(num1 >= 0){
             num1 = "";
         }
         num1 += $(this).text();
@@ -15,7 +15,7 @@ $("button[name='valor']" ).on('click', function () {
         document.getElementById("numero").innerHTML = num1;
         return num1;
     } else if(encendida == true && operacion != ""){
-        if(num2 == 0){
+        if(num2 >= 0){
             num2 = "";
         }
         num2 += $(this).text();
@@ -69,7 +69,7 @@ function division(num1, num2) {
     operacion = "";
 }
 
-function resultado_operacion(operacion) {
+$("button[name='resultado_operacion']" ).on('click', function () {
     switch (operacion) {
         case "+":
             suma(num1, num2);
@@ -98,30 +98,30 @@ function resultado_operacion(operacion) {
         default:
             break;
     }
-}
+});
 
-function encender() {
+$("button[name='encender']" ).on('click', function () {
     document.getElementById("numero").innerHTML = "0";
     encendida = true;
     num1 = "";
     num2 = "";
     operacion = "";
     resultado = "";
-}
+});
 
-function limpiar() {
+$("button[name='limpiar']" ).on('click', function () {
     document.getElementById("numero").innerHTML = "0";
     num1 = "";
     num2 = "";
     operacion = "";
     resultado = "";
-}
+});
 
-function apagar() {
+$("button[name='apagar']" ).on('click', function () {
     document.getElementById("numero").innerHTML = "";
     encendida = false;
     num1 = "";
     num2 = "";
     operacion = "";
     resultado = "";
-}
+});
