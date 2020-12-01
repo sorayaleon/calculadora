@@ -7,17 +7,11 @@ var resultado = 0;
     
 $("button[name='valor']" ).on('click', function () {
     if(encendida == true && operacion == ""){
-        if(num1 >= 0){
-            num1 = "";
-        }
         num1 += $(this).text();
         parseFloat(num1);
         document.getElementById("numero").innerHTML = num1;
         return num1;
     } else if(encendida == true && operacion != ""){
-        if(num2 >= 0){
-            num2 = "";
-        }
         num2 += $(this).text();
         parseFloat(num2);
         document.getElementById("numero").innerHTML = num1 + operacion + num2;
@@ -30,9 +24,6 @@ $("button[name='operacion']" ).on('click', function () {
     if(encendida == true && operacion == ""){
         if(num1 == ""){
             num1 = 0;
-        }
-        if(num2 == ""){
-            num2 = 0;
         }
         operacion = $(this).text();
         parseFloat(operacion);
